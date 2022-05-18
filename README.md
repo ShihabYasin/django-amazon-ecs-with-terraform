@@ -72,7 +72,7 @@ $ docker rm django-test
 ├── manage.py
 └── requirements.txt
 </code></pre>
-<p>For a more detailed look at how to containerize a Django app, review the <a href="/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/">Dockerizing Django with Postgres, Gunicorn, and Nginx</a> blog post.</p>
+
 <h2 id="ecr">ECR</h2>
 <p>Before jumping into Terraform, let's push the Docker image to <a href="https://aws.amazon.com/ecr/">Elastic Container Registry</a> (ECR), a private Docker image registry.</p>
 <p>Navigate to the <a href="http://console.aws.amazon.com/ecr">ECR console</a>, and add a new repository called "django-app". Keep the tags mutable. For more on this, review the <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html">Image Tag Mutability</a> guide.</p>
